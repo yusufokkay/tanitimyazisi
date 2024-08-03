@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #18181B;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    /* Ekran boyutlarına göre kartın genişliğini ayarlayın */
+}
+
+.card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 600px) {
+    .card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+
